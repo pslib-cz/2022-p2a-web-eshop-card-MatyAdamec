@@ -1,2 +1,4 @@
 # 2022-p2a-web-eshop-card-MatyAdamec
-2022-p2a-web-eshop-card-MatyAdamec created by GitHub Classroom
+
+[Tento repozitář](https://pslib-cz.github.io/2022-p2a-web-eshop-card-MatyAdamec/Index.html).
+[Alternativní repozitář](https://matyadamec.github.io/Telefony/Index.html).
