@@ -1,0 +1,214 @@
+.card{
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: lightgray 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease-in-out;
+    color: var(--text);
+    font-size: .9em;
+}
+
+.card:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+}
+
+.card__sale{
+    background-color: #e5f6ff;
+    margin: 0;
+    padding: .5em;
+    text-align: center;
+    height: 45px;
+
+}
+
+
+.card__header {
+    padding: 1em 0 1em 0;
+    height: 200px;
+}
+
+.card__img-link {
+    height: 100%;
+    display: block;
+}
+
+.card__img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+.card:hover .card__img{
+    transform: scale(1.05);
+}
+
+
+
+
+.card__colors{
+text-align: center;
+font-size: 2px;
+
+}
+.card__color{
+    display: inline-block;
+    text-align: center;
+    content: " ";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px rgb(156, 156, 156) solid;
+}
+.card__color--black{
+    background-color: rgb(0, 0, 0);
+}
+.card__color--Polo-Blue {
+    background-color: var(--Polo-Blue);
+}
+.card__color--Shadow-Green {
+    background-color: var(--Shadow-Green);
+}
+.card__color--Dim-Gray {
+    background-color: var(--Dim-Gray);
+}
+.card__color--Spindle {
+    background-color: var(--Spindle);
+}
+.card__color--Catalina-Blue {
+    background-color: var(--Catalina-Blue);
+}
+.card__color--Genoa {
+    background-color: var(--Genoa);
+}
+
+
+
+
+.card__labels{
+    margin: 1em 1.2em 0 1.2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card__label{
+    margin: .5em .2em 0 0;
+    border-radius: 8px;
+    white-space: nowrap;
+    padding: .2em ;
+    color: white;
+}
+.card__label--price{
+    background-color: #f33;
+}
+.card__label--500{
+    background-color: #39c;
+}
+.card__label--new{
+    background-color: #fc0;
+    padding:.2em .9em .2em .9em;
+    color: #000;
+}
+.card__label--5G{
+    background-color: #00069f;
+    padding-right: 4em;
+}
+.card__label--5G strong{
+    position: absolute;
+    font-size: 2.7em;
+    margin-top: -.35em;
+    -webkit-text-stroke: 2px #00069f;
+    background-image: linear-gradient(45deg, rgb(255, 217, 0), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.card__body{
+    margin-top: auto;
+    padding: 1em 1em .5em 1em;
+}
+.card__title{
+    text-decoration: none;
+    display: block;
+    min-height: 2.3em;
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: var(--title);
+    text-align: center;
+}
+.card__title:hover{
+    text-decoration: underline;
+}
+.card__apprise{
+    margin-top: auto;
+text-align: center;    font-size: 1.4em;
+    color: gold;
+}
+.card__apprise--5::after{
+    content: "\2605 \2605 \2605 \2605 \2605";
+}
+.card__apprise--4::after{
+    content: "\2605 \2605 \2605 \2605 \2606";
+}
+.card__apprise--3::after{
+    content: "\2605 \2605 \2605 \2606 \2606";
+}
+.card__apprise--2::after{
+    content: "\2605 \2605 \2606 \2606 \2606";
+}
+.card__apprise--1::after{
+    content: "\2605 \2606 \2606 \2606 \2606";
+}
+.card__stock{
+    color: var(--stock);
+    text-align: center;
+    font-size: .8em;
+}
+p.card__text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card__price-text{
+    margin-top: 2em;
+}
+.card__price{
+    display: block;
+    font-size: 1.7em;
+    color: #000;
+}
+
+
+
+.card__cta{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 90%;
+}
+.card__cta__btn{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding:  .5em 0;
+    width: calc(100% - 4px);
+    border: 2px solid var(--cta_border);
+    background-color: var(--cta);
+    
+    border-radius: 7px;
+    color: white;
+}
+.card__cta__btn:hover{
+    background-color: var(--cta-hover);
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+html{
+    font-family: OpenSans,sans-serif;
+}
+
+body{
+    background-color: #b2bfc7;
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*
+    justify-content: center;
+    flex-wrap: wrap;*/
+    display: flex;
+    gap: 1em;
+}
+
+:root{
+    --Polo-Blue: #75A2C9;       /*Polo Blue*/
+    --Shadow-Green:#95BAAE;      /*Shadow Green*/
+    --Dim-Gray:#616161 ;        /*Dim Gray*/
+    --Spindle:#B7BEC6 ;         /*Spindle*/
+    --Catalina-Blue:#203567 ;   /*Catalina Blue*/
+    --Genoa:#35736E;            /*Genoa*/
+    --title: #08c;              /*Pacific Blue*/
+    --stock:#7ca600;            /*Christi*/
+    --text:#646464;             /*dimm gray*/
+    --cta_border:#8ebd00;       /*Citrus*/
+    --cta: #99cc00;             /*Citrus*/
+    --cta-hover:#b3e61c;        /*Citrus*/
+}   
