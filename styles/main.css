@@ -24,7 +24,7 @@ main{/*
     display: grid;
     box-sizing: border-box;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, calc( var(--card-width) + 2px ));
+    grid-template-columns: repeat(auto-fit, calc( var(--card-width) + 2px ));
     justify-content: center;
     margin-top: 5em;
 
