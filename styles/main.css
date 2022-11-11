@@ -7,17 +7,28 @@ body{
     background-color: #b2bfc7;
 }
 
-main{
-    position: absolute;
+main{/*
+    margin-top: 5em;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    /*
-    justify-content: center;
     flex-wrap: wrap;*/
+
+    /*
+    margin: 0 auto;
+    max-width: calc(var(--card-width) * var(--cards-in-row) + 2em + 6*1px);
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1em;
+    justify-content: start;
+    */
     display: flex;
     gap: 1em;
+    width: fit-content;
+    flex-wrap: wrap;
+    margin: 6em auto 0 auto; 
+
 }
+
 
 :root{
     --Polo-Blue: #75A2C9;       /*Polo Blue*/
@@ -32,4 +43,6 @@ main{
     --cta_border:#8ebd00;       /*Citrus*/
     --cta: #99cc00;             /*Citrus*/
     --cta-hover:#b3e61c;        /*Citrus*/
+    --card-width:300px;
+    --cards-in-row:3;
 }   
